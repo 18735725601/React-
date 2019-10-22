@@ -6,6 +6,6 @@ export default function user(state=initUser,action) {
   switch (action.type) {
     
     default:
-      break;
+      return state
   }
 }
