@@ -30,8 +30,8 @@ export default {
   set,
   get,
   remove,
-  KEYS:{
-    USER_KET:'user_key',
-    TOKEN_KEY:'token_key'
+  KEYS: {
+    USER_KEY: 'user_key',
+    TOKEN_KEY: 'token_key'
   }
 }

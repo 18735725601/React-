@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 
 import {loginAsync} from '../../redux/action-creators/user'
 import logo from './images/logo.png'
-import './login.less'
+import './index.less'
 // import ajax from '../../api/ajax'
 
 const { Item } = Form // 必须在所有import的下面
