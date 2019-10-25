@@ -9,7 +9,7 @@ import { connect } from 'react-redux'
 import {loginAsync} from '../../redux/action-creators/user'
 import logo from './images/logo.png'
 import './index.less'
-// import ajax from '../../api/ajax'
+import WithCheckLogin from "../with-check-login";
 
 const { Item } = Form // 必须在所有import的下面
 
@@ -17,7 +17,9 @@ const { Item } = Form // 必须在所有import的下面
   state => ({hasLogin: state.user.hasLogin}),  // 用于显示的一般属性
   {loginAsync} // 用于更新状态的函数属性
 )
+
 @Form.create()    // Login = Form.create()(Login)
+@WithCheckLogin      //checklogin = witCheckLogin(Login)
 class Login extends Component {
 
   handleSubmit = (event) => {
